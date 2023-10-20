@@ -28,4 +28,9 @@
         labelResult.Text = resultLabel
 
     End Sub
+
+    Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
+        Me.Hide()
+        FormHome.Show()
+    End Sub
 End Class

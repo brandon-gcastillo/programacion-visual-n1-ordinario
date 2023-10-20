@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicio10.Designer.vb">
+      <DependentUpon>Ejercicio10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio10.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio11.Designer.vb">
       <DependentUpon>Ejercicio11.vb</DependentUpon>
     </Compile>
@@ -97,11 +103,11 @@
     <Compile Include="Ejercicio7.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="FormHome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormHome.Designer.vb">
+      <DependentUpon>FormHome.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio9.Designer.vb">
@@ -127,6 +133,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ejercicio10.resx">
+      <DependentUpon>Ejercicio10.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio11.resx">
       <DependentUpon>Ejercicio11.vb</DependentUpon>
     </EmbeddedResource>
@@ -142,8 +151,8 @@
     <EmbeddedResource Include="Ejercicio9.resx">
       <DependentUpon>Ejercicio9.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -29,8 +29,9 @@ Partial Class Ejercicio11
         Me.textBoxFecha = New System.Windows.Forms.TextBox()
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.groupBoxResult = New System.Windows.Forms.GroupBox()
-        Me.labelResult = New System.Windows.Forms.Label()
         Me.labelResult11 = New System.Windows.Forms.Label()
+        Me.labelResult = New System.Windows.Forms.Label()
+        Me.btnGoBack = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.groupBoxResult.SuspendLayout()
@@ -45,6 +46,7 @@ Partial Class Ejercicio11
         Me.FlowLayoutPanel1.Controls.Add(Me.FlowLayoutPanel2)
         Me.FlowLayoutPanel1.Controls.Add(Me.btnEnviar)
         Me.FlowLayoutPanel1.Controls.Add(Me.groupBoxResult)
+        Me.FlowLayoutPanel1.Controls.Add(Me.btnGoBack)
         Me.FlowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(12, 12)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
@@ -113,15 +115,6 @@ Partial Class Ejercicio11
         Me.groupBoxResult.TabStop = False
         Me.groupBoxResult.Text = "Resultado:"
         '
-        'labelResult
-        '
-        Me.labelResult.AutoSize = True
-        Me.labelResult.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelResult.Location = New System.Drawing.Point(7, 27)
-        Me.labelResult.Name = "labelResult"
-        Me.labelResult.Size = New System.Drawing.Size(0, 19)
-        Me.labelResult.TabIndex = 0
-        '
         'labelResult11
         '
         Me.labelResult11.AutoSize = True
@@ -131,14 +124,33 @@ Partial Class Ejercicio11
         Me.labelResult11.Size = New System.Drawing.Size(0, 19)
         Me.labelResult11.TabIndex = 1
         '
+        'labelResult
+        '
+        Me.labelResult.AutoSize = True
+        Me.labelResult.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelResult.Location = New System.Drawing.Point(7, 27)
+        Me.labelResult.Name = "labelResult"
+        Me.labelResult.Size = New System.Drawing.Size(0, 19)
+        Me.labelResult.TabIndex = 0
+        '
+        'btnGoBack
+        '
+        Me.btnGoBack.Location = New System.Drawing.Point(15, 401)
+        Me.btnGoBack.Name = "btnGoBack"
+        Me.btnGoBack.Size = New System.Drawing.Size(139, 32)
+        Me.btnGoBack.TabIndex = 7
+        Me.btnGoBack.Text = "Regresar"
+        Me.btnGoBack.UseVisualStyleBackColor = True
+        '
         'Ejercicio11
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Cornsilk
         Me.ClientSize = New System.Drawing.Size(850, 495)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Ejercicio11"
         Me.Text = "Ejercicio 11"
         Me.FlowLayoutPanel1.ResumeLayout(False)
@@ -160,4 +172,5 @@ Partial Class Ejercicio11
     Friend WithEvents groupBoxResult As GroupBox
     Friend WithEvents labelResult As Label
     Friend WithEvents labelResult11 As Label
+    Friend WithEvents btnGoBack As Button
 End Class

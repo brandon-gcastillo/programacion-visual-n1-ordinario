@@ -29,6 +29,7 @@ Partial Class Ejercicio9
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.labelResult = New System.Windows.Forms.Label()
+        Me.btnGoBack = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,12 +44,13 @@ Partial Class Ejercicio9
         Me.FlowLayoutPanel1.Controls.Add(Me.textBoxCadenaTexto)
         Me.FlowLayoutPanel1.Controls.Add(Me.btnEnviar)
         Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox1)
+        Me.FlowLayoutPanel1.Controls.Add(Me.btnGoBack)
         Me.FlowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.FlowLayoutPanel1.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(12, 12)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Padding = New System.Windows.Forms.Padding(12)
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(776, 426)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(776, 474)
         Me.FlowLayoutPanel1.TabIndex = 0
         '
         'Label1
@@ -106,11 +108,21 @@ Partial Class Ejercicio9
         Me.labelResult.Size = New System.Drawing.Size(0, 19)
         Me.labelResult.TabIndex = 0
         '
+        'btnGoBack
+        '
+        Me.btnGoBack.Location = New System.Drawing.Point(15, 410)
+        Me.btnGoBack.Name = "btnGoBack"
+        Me.btnGoBack.Size = New System.Drawing.Size(128, 32)
+        Me.btnGoBack.TabIndex = 5
+        Me.btnGoBack.Text = "Regresar"
+        Me.btnGoBack.UseVisualStyleBackColor = True
+        '
         'Ejercicio9
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.SeaShell
+        Me.ClientSize = New System.Drawing.Size(800, 498)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Name = "Ejercicio9"
         Me.Text = "Ejercicio 9"
@@ -129,4 +141,5 @@ Partial Class Ejercicio9
     Friend WithEvents btnEnviar As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents labelResult As Label
+    Friend WithEvents btnGoBack As Button
 End Class

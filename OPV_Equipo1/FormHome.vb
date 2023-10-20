@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class FormHome
     Private Sub EJERCICIOSToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -44,6 +44,11 @@
 
     Private Sub EJERCICIO11ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO11ToolStripMenuItem.Click
         Ejercicio11.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO10ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO10ToolStripMenuItem.Click
+        Ejercicio10.Show()
         Me.Hide()
     End Sub
 End Class
