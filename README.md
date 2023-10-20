@@ -1,2 +1,3 @@
-# programacion-visual-n1-ordinario
-Examen Ordinario - Programación Visual N1
+# Programación Visual N1 - Examen Ordinario
+
+Por favor, lee las instrucciones para incorporar Git a tu proyecto y crear tu rama.
