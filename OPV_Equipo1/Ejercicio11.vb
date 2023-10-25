@@ -1,29 +1,22 @@
-﻿Public Class Ejercicio11
+﻿Imports System.Text.RegularExpressions
+Public Class Ejercicio11
 
     Public Function VerifyDate(ByVal dateValue As String) As Boolean
-        Dim IsValueCorrect As Boolean = True
-        Dim splittedValue As String() = dateValue.Split("/"c)
+        Dim datePattern As String = "^(((0[1-9]|[12][0-9]|3[01])[- /.](0[13578]|1[02])|(0[1-9]|[12][0-9]|30)[- /.](0[469]|11)|(0[1-9]|1\d|2[0-8])[- /.]02)[- /.]\d{4}|29[- /.]02[- /.](\d{2}(0[48]|[2468][048]|[13579][26])|([02468][048]|[1359][26])00))$"
+        Dim regexDate As New Regex(datePattern)
 
-        If splittedValue.Length - 1 < 2 Or Not dateValue.Contains("/"c) Then
-            IsValueCorrect = False
-        End If
+        Dim validDate As Boolean = regexDate.IsMatch(dateValue)
 
-        For Each item In splittedValue
-            If Not IsNumeric(Convert.ToInt32(item)) Then
-                IsValueCorrect = False
-            End If
-        Next
-
-        Return IsValueCorrect
+        Return validDate
     End Function
 
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
-        Dim inputDate As String = textBoxFecha.Text
+        Dim inputDate As String = textBoxFecha.Text.Trim()
 
         Dim IsValidDate As Boolean = VerifyDate(inputDate)
 
         If Not IsValidDate Then
-            MsgBox("Por favor verifica que sea una fecha valida. (dd/mm/aaaa).")
+            MsgBox("Por favor verifica que sea una fecha valida. (dd/mm/aaaa).", Title:="Error")
             Exit Sub
         End If
 
@@ -42,7 +35,7 @@
             End Select
         Next
 
-        labelResult11.Text = result
+        labelResult.Text = result
     End Sub
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click

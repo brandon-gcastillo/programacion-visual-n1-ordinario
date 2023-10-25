@@ -28,8 +28,8 @@ Partial Class Ejercicio9
         Me.textBoxCadenaTexto = New System.Windows.Forms.TextBox()
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.labelResult = New System.Windows.Forms.Label()
         Me.btnGoBack = New System.Windows.Forms.Button()
+        Me.textBoxResult = New System.Windows.Forms.TextBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -92,21 +92,13 @@ Partial Class Ejercicio9
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.labelResult)
+        Me.GroupBox1.Controls.Add(Me.textBoxResult)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 153)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(304, 251)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Resultado:"
-        '
-        'labelResult
-        '
-        Me.labelResult.AutoSize = True
-        Me.labelResult.Location = New System.Drawing.Point(6, 23)
-        Me.labelResult.Name = "labelResult"
-        Me.labelResult.Size = New System.Drawing.Size(0, 19)
-        Me.labelResult.TabIndex = 0
         '
         'btnGoBack
         '
@@ -116,6 +108,16 @@ Partial Class Ejercicio9
         Me.btnGoBack.TabIndex = 5
         Me.btnGoBack.Text = "Regresar"
         Me.btnGoBack.UseVisualStyleBackColor = True
+        '
+        'textBoxResult
+        '
+        Me.textBoxResult.Location = New System.Drawing.Point(7, 27)
+        Me.textBoxResult.Multiline = True
+        Me.textBoxResult.Name = "textBoxResult"
+        Me.textBoxResult.ReadOnly = True
+        Me.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.textBoxResult.Size = New System.Drawing.Size(291, 218)
+        Me.textBoxResult.TabIndex = 0
         '
         'Ejercicio9
         '
@@ -140,6 +142,6 @@ Partial Class Ejercicio9
     Friend WithEvents textBoxCadenaTexto As TextBox
     Friend WithEvents btnEnviar As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents labelResult As Label
     Friend WithEvents btnGoBack As Button
+    Friend WithEvents textBoxResult As TextBox
 End Class

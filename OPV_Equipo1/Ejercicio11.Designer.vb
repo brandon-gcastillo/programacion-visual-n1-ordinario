@@ -29,7 +29,6 @@ Partial Class Ejercicio11
         Me.textBoxFecha = New System.Windows.Forms.TextBox()
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.groupBoxResult = New System.Windows.Forms.GroupBox()
-        Me.labelResult11 = New System.Windows.Forms.Label()
         Me.labelResult = New System.Windows.Forms.Label()
         Me.btnGoBack = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel1.SuspendLayout()
@@ -105,7 +104,6 @@ Partial Class Ejercicio11
         '
         'groupBoxResult
         '
-        Me.groupBoxResult.Controls.Add(Me.labelResult11)
         Me.groupBoxResult.Controls.Add(Me.labelResult)
         Me.groupBoxResult.Font = New System.Drawing.Font("Lato Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.groupBoxResult.Location = New System.Drawing.Point(15, 182)
@@ -115,22 +113,13 @@ Partial Class Ejercicio11
         Me.groupBoxResult.TabStop = False
         Me.groupBoxResult.Text = "Resultado:"
         '
-        'labelResult11
-        '
-        Me.labelResult11.AutoSize = True
-        Me.labelResult11.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelResult11.Location = New System.Drawing.Point(7, 32)
-        Me.labelResult11.Name = "labelResult11"
-        Me.labelResult11.Size = New System.Drawing.Size(0, 19)
-        Me.labelResult11.TabIndex = 1
-        '
         'labelResult
         '
         Me.labelResult.AutoSize = True
         Me.labelResult.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelResult.Location = New System.Drawing.Point(7, 27)
         Me.labelResult.Name = "labelResult"
-        Me.labelResult.Size = New System.Drawing.Size(0, 19)
+        Me.labelResult.Size = New System.Drawing.Size(29, 19)
         Me.labelResult.TabIndex = 0
         '
         'btnGoBack
@@ -171,6 +160,5 @@ Partial Class Ejercicio11
     Friend WithEvents btnEnviar As Button
     Friend WithEvents groupBoxResult As GroupBox
     Friend WithEvents labelResult As Label
-    Friend WithEvents labelResult11 As Label
     Friend WithEvents btnGoBack As Button
 End Class

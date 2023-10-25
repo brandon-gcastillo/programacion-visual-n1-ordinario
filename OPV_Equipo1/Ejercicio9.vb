@@ -1,31 +1,39 @@
 ﻿Public Class Ejercicio9
 
-    Public Function CountCharacter(ByVal value As String, ByVal letter As Char) As Integer
-        Dim contador As Integer = 0
-        For index As Integer = 0 To value.Length - 1
-            If value(index) = letter Then
-                contador += 1
-            End If
-        Next
-        Return contador
-    End Function
-
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
 
-        Dim strMsg As String = textBoxCadenaTexto.Text.Trim()
-        Dim itemsFound As Integer() = New Integer(strMsg.Length - 1) {}
+        Dim ocurrenciasDic As New Dictionary(Of Char, Integer)
+        Dim cadenaTexto As String = textBoxCadenaTexto.Text.Trim()
         Dim resultLabel As String = ""
 
-        For index As Integer = 0 To strMsg.Length - 1
-            Dim contador As Integer = CountCharacter(strMsg, Convert.ToChar(strMsg(index)))
-            itemsFound(index) = contador
+        If cadenaTexto = "" Then
+            MsgBox("Por favor, introduce una cadena de texto.", Title:="Error")
+            textBoxCadenaTexto.Text = ""
+        End If
+
+        For Each letra In cadenaTexto
+
+            'Saltar caracter si es un espacio
+            If letra = " " Then
+                Continue For
+            End If
+
+            'Si el diccionario ya contiene la letra, incrementar ocurrencia del caracter
+            If ocurrenciasDic.ContainsKey(letra) Then
+                ocurrenciasDic(letra) += 1
+            Else
+                'Agregar palabra y ocurrencia al diccionario
+                ocurrenciasDic.Add(letra, 1)
+            End If
+
         Next
 
-        For index As Integer = 0 To itemsFound.Length - 1
-            resultLabel += "La letra '" & strMsg(index) & "' ha aparecido: " & itemsFound(index) & " veces." & vbNewLine
+        For Each par In ocurrenciasDic
+            resultLabel += "La letra '" & par.Key & "' ha aparecido: " & par.Value & " veces." & vbNewLine
         Next
 
-        labelResult.Text = resultLabel
+        'Agregar resultado al label
+        textBoxResult.Text = resultLabel
 
     End Sub
 
