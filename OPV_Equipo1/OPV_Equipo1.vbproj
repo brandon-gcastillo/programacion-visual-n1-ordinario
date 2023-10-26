@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicio1.Designer.vb">
+      <DependentUpon>Ejercicio1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio10.Designer.vb">
       <DependentUpon>Ejercicio10.vb</DependentUpon>
     </Compile>
@@ -85,10 +91,52 @@
     <Compile Include="Ejercicio11.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ejercicio12.Designer.vb">
+      <DependentUpon>Ejercicio12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio13.Designer.vb">
+      <DependentUpon>Ejercicio13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio14.Designer.vb">
+      <DependentUpon>Ejercicio14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio15.Designer.vb">
+      <DependentUpon>Ejercicio15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio15.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio16.Designer.vb">
+      <DependentUpon>Ejercicio16.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio16.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicio2.Designer.vb">
       <DependentUpon>Ejercicio2.vb</DependentUpon>
     </Compile>
     <Compile Include="Ejercicio2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio3.Designer.vb">
+      <DependentUpon>Ejercicio3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4.Designer.vb">
+      <DependentUpon>Ejercicio4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ejercicio6.Designer.vb">
@@ -101,6 +149,12 @@
       <DependentUpon>Ejercicio7.vb</DependentUpon>
     </Compile>
     <Compile Include="Ejercicio7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio8.Designer.vb">
+      <DependentUpon>Ejercicio8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio8.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHome.vb">
@@ -133,20 +187,47 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ejercicio1.resx">
+      <DependentUpon>Ejercicio1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio10.resx">
       <DependentUpon>Ejercicio10.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio11.resx">
       <DependentUpon>Ejercicio11.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio12.resx">
+      <DependentUpon>Ejercicio12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio13.resx">
+      <DependentUpon>Ejercicio13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio14.resx">
+      <DependentUpon>Ejercicio14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio15.resx">
+      <DependentUpon>Ejercicio15.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio16.resx">
+      <DependentUpon>Ejercicio16.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio2.resx">
       <DependentUpon>Ejercicio2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio3.resx">
+      <DependentUpon>Ejercicio3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio4.resx">
+      <DependentUpon>Ejercicio4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio6.resx">
       <DependentUpon>Ejercicio6.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio7.resx">
       <DependentUpon>Ejercicio7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio8.resx">
+      <DependentUpon>Ejercicio8.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicio9.resx">
       <DependentUpon>Ejercicio9.vb</DependentUpon>

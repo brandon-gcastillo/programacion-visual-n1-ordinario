@@ -51,4 +51,49 @@
         Ejercicio10.Show()
         Me.Hide()
     End Sub
+
+    Private Sub EJERCICIO3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO3ToolStripMenuItem.Click
+        Ejercicio3.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO1ToolStripMenuItem.Click
+        Ejercicio1.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO4ToolStripMenuItem.Click
+        Ejercicio4.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO8ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO8ToolStripMenuItem.Click
+        Ejercicio8.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO12ToolStripMenuItem.Click
+        Ejercicio12.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO13ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO13ToolStripMenuItem.Click
+        Ejercicio13.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO14ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO14ToolStripMenuItem.Click
+        Ejercicio14.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO15ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO15ToolStripMenuItem.Click
+        Ejercicio15.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EJERCICIO16ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJERCICIO16ToolStripMenuItem.Click
+        Ejercicio16.Show()
+        Me.Hide()
+    End Sub
 End Class

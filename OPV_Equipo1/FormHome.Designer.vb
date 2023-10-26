@@ -94,6 +94,7 @@ Partial Class FormHome
         '
         'EJERCICIO4ToolStripMenuItem1
         '
+        Me.EJERCICIO4ToolStripMenuItem1.Enabled = False
         Me.EJERCICIO4ToolStripMenuItem1.Name = "EJERCICIO4ToolStripMenuItem1"
         Me.EJERCICIO4ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.EJERCICIO4ToolStripMenuItem1.Text = "EJERCICIO 5"
